@@ -6,7 +6,18 @@ target 'Weather' do
   use_frameworks!
 
   # Pods for Weather
-pod 'Argo'
-pod 'ReactiveSwift', '~> 1.0.0'
+  pod 'Argo'
+  pod 'ReactiveSwift', '~> 1.0.0'
+  pod 'Curry'
+  pod 'Alamofire', '~> 4.0'
+  pod 'Kingfisher', '~> 3.2'
+  
+end
 
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['SWIFT_VERSION'] = '3.0'
+        end
+    end
 end

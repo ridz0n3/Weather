@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22173A921E21E26900169FC4 /* ListWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22173A911E21E26900169FC4 /* ListWeatherModel.swift */; };
+		22173A951E21EEB800169FC4 /* CustomWeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22173A941E21EEB800169FC4 /* CustomWeatherTableViewCell.swift */; };
+		22AFD67D1E2209FD006BD572 /* WeatherDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AFD67C1E2209FD006BD572 /* WeatherDetailViewController.swift */; };
 		22CCB0921E1F80A800CEAAE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CCB0911E1F80A800CEAAE1 /* AppDelegate.swift */; };
 		22CCB0941E1F80A800CEAAE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CCB0931E1F80A800CEAAE1 /* ViewController.swift */; };
 		22CCB0971E1F80A800CEAAE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22CCB0951E1F80A800CEAAE1 /* Main.storyboard */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22173A911E21E26900169FC4 /* ListWeatherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListWeatherModel.swift; sourceTree = "<group>"; };
+		22173A941E21EEB800169FC4 /* CustomWeatherTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomWeatherTableViewCell.swift; sourceTree = "<group>"; };
+		22AFD67C1E2209FD006BD572 /* WeatherDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDetailViewController.swift; sourceTree = "<group>"; };
 		22CCB08E1E1F80A800CEAAE1 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22CCB0911E1F80A800CEAAE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22CCB0931E1F80A800CEAAE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +46,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22173A901E21E23700169FC4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				22173A911E21E26900169FC4 /* ListWeatherModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		22173A931E21EE5300169FC4 /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				22173A941E21EEB800169FC4 /* CustomWeatherTableViewCell.swift */,
+			);
+			name = "Custom Cell";
+			sourceTree = "<group>";
+		};
 		22CCB0851E1F80A800CEAAE1 = {
 			isa = PBXGroup;
 			children = (
@@ -61,8 +83,11 @@
 		22CCB0901E1F80A800CEAAE1 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				22173A931E21EE5300169FC4 /* Custom Cell */,
+				22173A901E21E23700169FC4 /* Model */,
 				22CCB0911E1F80A800CEAAE1 /* AppDelegate.swift */,
 				22CCB0931E1F80A800CEAAE1 /* ViewController.swift */,
+				22AFD67C1E2209FD006BD572 /* WeatherDetailViewController.swift */,
 				22CCB0951E1F80A800CEAAE1 /* Main.storyboard */,
 				22CCB0981E1F80A800CEAAE1 /* Assets.xcassets */,
 				22CCB09A1E1F80A800CEAAE1 /* LaunchScreen.storyboard */,
@@ -213,6 +238,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				22CCB0941E1F80A800CEAAE1 /* ViewController.swift in Sources */,
+				22173A921E21E26900169FC4 /* ListWeatherModel.swift in Sources */,
+				22173A951E21EEB800169FC4 /* CustomWeatherTableViewCell.swift in Sources */,
+				22AFD67D1E2209FD006BD572 /* WeatherDetailViewController.swift in Sources */,
 				22CCB0921E1F80A800CEAAE1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,7 +307,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -323,7 +351,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -379,6 +407,7 @@
 				22CCB0A21E1F80A800CEAAE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
